@@ -1,0 +1,31 @@
+.container-sm{
+  height:max-content;
+  width:max;
+  text-align: center;
+  margin-top: 0;
+}
+.container-fluid{
+  height: 1200px;
+  width: 100%;
+  background-color:white
+
+}
+
+#main-card{
+  background-color:blue;
+  color: white;
+}
+
+.card-body{
+  
+  background-color: black;
+  color: white;
+
+
+}
+
+
+
+
+ 
+  
