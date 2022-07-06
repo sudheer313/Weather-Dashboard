@@ -24,6 +24,9 @@ localStorage.getItem("cities");
 //append.display[i];
 
 //
+//window.onload = function () {
+       //code that runs on load
+  // };
 
 
 console.log(cities);
@@ -60,3 +63,11 @@ fetch("https://api.openweathermap.org/data/2.5/forecast?q="+inputData.value+"&ap
 
 fetchApi();
 }
+window.onload = function () {
+    let html="";
+    for(let i = 0; i < cities.length; i++){
+        console.log(cities[i]);
+        html += '<li><button>' + cities[i] + '</button></li>'
+        }
+        document.querySelector('#seachHistory').innerHTML = html;
+  };
