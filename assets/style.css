@@ -19,6 +19,7 @@ li{
   width:max;
   text-align: center;
   margin-top: 0;
+  background-color:brown;
 }
 .container-fluid{
   height: 1200px;
@@ -33,7 +34,8 @@ li{
 
 #main-card{
   background-color:blue;
-  color: white;
+  color: whitesmoke;
+ 
 }
 
 .card-body{
