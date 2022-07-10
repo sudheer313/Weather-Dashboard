@@ -6,8 +6,16 @@
 
 button{
   background-color: lightgreen;
+  width: 30%;
+  text-align: center;
+  cursor: pointer;
+  padding: 14px 28px;
   
-  
+}
+
+::placeholder {
+  color: red;
+ 
 }
 
 li{
