@@ -128,18 +128,23 @@ function fetchApi() {
     });
 }
 
+let html = "";
 window.onload = function () {
-  let html = "";
+  //let html = "";
   for (let i = 0; i < cities.length; i++) {
+   
     console.log(cities[i]);
-    html += "<li><button id='searchButton'>" + cities[i] + "</button></li>";
+    html += "<li><button id='recentSearch'>" + cities[i] + "</button></li>";
   }
   // need to add id to this button
   document.querySelector("#seachHistory").innerHTML = html;
-  document.querySelector("#searchButton").innerHTML= searchButton;
-  searchButton.addEventListener("click",fetchApi());
-  //.addEventListener("click", ()=>{console.log(this)})
-  console.log(html);
-  // html.setAttribute('id', 'historyButton');
 
+  var recent=document.querySelector("#recentSearch").innerText;
+  //.addEventListener("click", ()=>{console.log(this)})
+  
+  // html.setAttribute('id', 'historyButton');
+  console.log(html);
 };
+
+
+
