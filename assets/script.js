@@ -139,17 +139,22 @@ window.onload = function () {
   // need to add id to this button
   document.querySelector("#seachHistory").innerHTML = html;
 
-  var recent=document.querySelector("#recentSearch").innerText;
+  //var recent=document.querySelector("#recentSearch").innerText;
   //.addEventListener("click", ()=>{console.log(this)})
   
   // html.setAttribute('id', 'historyButton');
-  console.log(html);
-  document.getElementById("recentSearch").addEventListener("click", recent1);
-  function recent1(){
+  //console.log(html);
+  //document.getElementById("recentSearch").addEventListener("click", recent1);
+  //function recent1(){
     
 
-    console.log(recentSearch.innerHTML);
-  }
+    //console.log(recentSearch.innerHTML);
+var exampleButton = document.getElementById("#recentSearch");
+exampleButton.addEventListener('click', function (event) {
+ var cityName = event.target.textContent;
+ callingWeatherFunctionWithCityName(cityName);
+})
+  
 
 };
 
