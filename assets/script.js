@@ -132,10 +132,12 @@ window.onload = function () {
   let html = "";
   for (let i = 0; i < cities.length; i++) {
     console.log(cities[i]);
-    html += "<li><button>" + cities[i] + "</button></li>";
+    html += "<li><button class='searchButton'>" + cities[i] + "</button></li>";
   }
   // need to add id to this button
   document.querySelector("#seachHistory").innerHTML = html;
+  document.querySelector(".searchButton").addEventListener("click", ()=>{console.log(this)})
+  console.log(html);
   // html.setAttribute('id', 'historyButton');
 
 };
