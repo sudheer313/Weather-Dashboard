@@ -144,7 +144,15 @@ window.onload = function () {
   
   // html.setAttribute('id', 'historyButton');
   console.log(html);
+  document.getElementById("recentSearch").addEventListener("click", recent1);
+  function recent1(){
+    
+
+    console.log(recentSearch.innerHTML);
+  }
+
 };
+
 
 
 
