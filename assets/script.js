@@ -149,10 +149,14 @@ window.onload = function () {
     
 
     //console.log(recentSearch.innerHTML);
-var exampleButton = document.getElementById("#recentSearch");
+var exampleButton = document.getElementById("recentSearch");
 exampleButton.addEventListener('click', function (event) {
  var cityName = event.target.textContent;
- callingWeatherFunctionWithCityName(cityName);
+ 
+ fetchApi(cityName);
+ console.log(exampleButton);
+
+
 })
   
 
